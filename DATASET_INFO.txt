@@ -1,0 +1,146 @@
+======================================================================
+DATASET INFORMATION
+======================================================================
+
+Name: Breast Histopathology Images (PatchCamelyon - PCam)
+Source: Kaggle
+URL: https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images/data
+
+======================================================================
+DESCRIPTION
+======================================================================
+
+This dataset contains 277,524 patches of size 50x50 pixels extracted 
+from 162 whole mount slide images of Breast Cancer (BCa) specimens 
+scanned at 40x magnification.
+
+Each patch is labeled:
+- 0: No metastatic tissue (normal/healthy)
+- 1: Contains metastatic tissue (tumor/cancer)
+
+The label is determined by the center 32x32 pixel region of each patch.
+
+======================================================================
+STATISTICS
+======================================================================
+
+Total patches:        277,524
+Tumor patches:        ~138,000 (49.8%)
+Normal patches:       ~139,000 (50.2%)
+Image size:           50x50x3 (RGB)
+Original WSI images:  162
+Staining:             H&E (Hematoxylin and Eosin)
+Tissue type:          Breast cancer lymph nodes
+
+======================================================================
+DOWNLOAD INSTRUCTIONS
+======================================================================
+
+Method 1: Kaggle CLI (Recommended)
+----------------------------------
+1. Install Kaggle CLI:
+   pip install kaggle
+
+2. Setup Kaggle API credentials:
+   - Go to: https://www.kaggle.com/settings/account
+   - Click "Create New API Token"
+   - Place kaggle.json in ~/.kaggle/ (Linux/Mac) or C:\Users\<User>\.kaggle\ (Windows)
+
+3. Download dataset:
+   kaggle datasets download -d paultimothymooney/breast-histopathology-images
+   
+4. Extract:
+   unzip breast-histopathology-images.zip -d archive/
+
+
+Method 2: Manual Download
+-------------------------
+1. Visit: https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images/data
+2. Click "Download" button (requires Kaggle account)
+3. Extract ZIP to ./archive/ directory
+4. Verify structure:
+   archive/
+   ├── 0/  (normal tissue images)
+   └── 1/  (tumor tissue images)
+
+======================================================================
+CITATION
+======================================================================
+
+If you use this dataset, please cite:
+
+Ehteshami Bejnordi B, Veta M, Johannes van Diest P, et al. 
+"Diagnostic Assessment of Deep Learning Algorithms for Detection of 
+Lymph Node Metastases in Women With Breast Cancer." 
+JAMA. 2017;318(22):2199–2210. 
+doi:10.1001/jama.2017.14585
+
+BibTeX:
+@article{bejnordi2017diagnostic,
+  title={Diagnostic assessment of deep learning algorithms for detection of lymph node metastases in women with breast cancer},
+  author={Bejnordi, Babak Ehteshami and Veta, Mitko and Van Diest, Paul Johannes and others},
+  journal={JAMA},
+  volume={318},
+  number={22},
+  pages={2199--2210},
+  year={2017},
+  publisher={American Medical Association}
+}
+
+======================================================================
+LICENSE
+======================================================================
+
+CC0: Public Domain
+No copyright restrictions - free to use for any purpose
+
+======================================================================
+ORIGINAL CHALLENGE
+======================================================================
+
+This dataset is derived from the Camelyon16 Grand Challenge:
+https://camelyon16.grand-challenge.org/
+
+The challenge focused on automated detection and localization of 
+metastases in whole-slide images of lymph node sections.
+
+======================================================================
+NOTES FOR USERS
+======================================================================
+
+1. DATA SPLIT:
+   - Use stratified split to maintain class balance
+   - Recommended: 64% train, 16% validation, 20% test
+   
+2. PREPROCESSING:
+   - Images already normalized to 50x50
+   - Consider ImageNet normalization: mean=[0.485, 0.456, 0.406]
+   
+3. CLASS IMBALANCE:
+   - Dataset is balanced (~50/50)
+   - Still consider focal loss or class weights for better performance
+   
+4. AUGMENTATION:
+   - Rotation (tissue has no preferred orientation)
+   - Flipping (horizontal/vertical)
+   - Color jittering (slight variations in staining)
+   
+5. EVALUATION:
+   - Use held-out test set for final evaluation
+   - Report: Sensitivity, Specificity, AUC-ROC, Precision-Recall
+   - Medical context: Prioritize sensitivity (minimize false negatives)
+
+======================================================================
+CONTACT
+======================================================================
+
+Dataset curator: Paul Mooney (Kaggle)
+Original data: Radboud University Medical Center, Netherlands
+
+For questions about this project:
+GitHub: https://github.com/yourusername/patches
+Email: your.email@example.com
+
+======================================================================
+LAST UPDATED: November 2025
+======================================================================

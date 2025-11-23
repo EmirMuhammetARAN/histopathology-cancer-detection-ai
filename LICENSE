@@ -1,21 +1,119 @@
-MIT License
+RESEARCH USE ONLY LICENSE
 
-Copyright (c) 2025 EmirMuhammetARAN
+Copyright (c) 2025 Emir
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+IMPORTANT: READ CAREFULLY BEFORE USING THIS SOFTWARE
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This software and associated documentation files (the "Software") are provided
+for RESEARCH AND EDUCATIONAL PURPOSES ONLY.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+TERMS AND CONDITIONS:
+
+1. PERMITTED USE
+   - Academic research and education
+   - Algorithm development and benchmarking
+   - Non-commercial scientific studies
+   - Learning and demonstration purposes
+
+2. PROHIBITED USE
+   This Software is explicitly NOT approved for:
+   - Clinical diagnosis or patient care
+   - Medical treatment decisions
+   - Healthcare delivery or screening programs
+   - Any use that affects patient outcomes
+   - Commercial deployment in medical settings
+   
+   ⚠️ WARNING: This software has NOT been cleared or approved by the U.S. Food
+   and Drug Administration (FDA), European Medicines Agency (EMA), or any other
+   regulatory authority. Use in clinical settings is PROHIBITED and may result
+   in patient harm and legal liability.
+
+3. LIABILITY DISCLAIMER
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+   
+   IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+   DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+   USE OR OTHER DEALINGS IN THE SOFTWARE.
+   
+   THE AUTHORS SPECIFICALLY DISCLAIM ANY LIABILITY FOR MEDICAL OUTCOMES,
+   PATIENT HARM, MISDIAGNOSIS, OR ANY OTHER CONSEQUENCES OF UNAUTHORIZED
+   CLINICAL USE.
+
+4. REGULATORY COMPLIANCE
+   Users are responsible for ensuring compliance with all applicable laws,
+   regulations, and ethical guidelines, including but not limited to:
+   - HIPAA (Health Insurance Portability and Accountability Act)
+   - GDPR (General Data Protection Regulation)
+   - FDA regulations for medical devices
+   - Local medical practice laws
+   - Institutional Review Board (IRB) requirements
+
+5. DATA PRIVACY
+   Users must:
+   - Obtain appropriate consent for any patient data used
+   - Anonymize all patient information
+   - Comply with data protection regulations
+   - Not use the Software on identifiable patient data without IRB approval
+
+6. ATTRIBUTION
+   Redistributions of source code or derivative works must retain this license
+   notice and the above copyright notice.
+
+7. MODIFICATION AND DISTRIBUTION
+   Permission is granted, free of charge, to any person obtaining a copy of
+   this Software to use, copy, modify, and distribute the Software for
+   RESEARCH PURPOSES ONLY, subject to the following conditions:
+   
+   - All copies must include this license and disclaimer
+   - Modified versions must be clearly marked as such
+   - Commercial use requires separate written permission
+   - Clinical use is strictly prohibited
+
+8. NO ENDORSEMENT
+   The names of the authors or contributors may not be used to endorse or
+   promote products derived from this Software without specific prior written
+   permission.
+
+9. TERMINATION
+   This license automatically terminates if you violate any of its terms.
+
+10. ACKNOWLEDGMENT
+    By using this Software, you acknowledge that:
+    - You have read and understood this license
+    - You will not use the Software for clinical purposes
+    - You understand the risks and limitations of the Software
+    - You will not make medical decisions based on the Software's output
+
+FOR CLINICAL APPLICATIONS:
+If you are interested in deploying this technology in a clinical setting,
+you must:
+1. Conduct extensive external validation
+2. Perform prospective clinical trials
+3. Obtain IRB approval
+4. Submit regulatory applications (FDA 510(k), CE Mark, etc.)
+5. Implement quality management systems (ISO 13485)
+6. Establish post-market surveillance
+
+Contact the author for commercial licensing inquiries.
+
+---
+
+DATASET LICENSE:
+This software uses the PatchCamelyon (PCam) dataset, which is derived from
+the Camelyon16 Challenge. Users must comply with the original dataset's
+terms of use. The PCam dataset is available for research purposes only.
+
+---
+
+⚠️ EMERGENCY NOTICE:
+FOR MEDICAL EMERGENCIES, DO NOT USE THIS SOFTWARE.
+CONTACT EMERGENCY SERVICES IMMEDIATELY.
+Call 911 (US) or your local emergency number.
+
+---
+
+Last Updated: November 24, 2025
+Version: 1.0.0

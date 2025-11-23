@@ -1,0 +1,75 @@
+# ====================================================================
+# Medical Cancer Detection - Production Environment
+# ====================================================================
+# Last Updated: November 24, 2025
+# Python Version: 3.8+ required, 3.10 recommended
+# CUDA Version: 11.2+ (for GPU acceleration)
+# ====================================================================
+
+# Core ML Framework
+tensorflow==2.13.0
+# tensorflow-gpu==2.13.0  # Uncomment if CUDA 11.8 available
+
+# Data Processing
+numpy==1.24.3
+pandas==2.0.3
+pillow==10.0.0
+
+# Scientific Computing & Statistics
+scikit-learn==1.3.0
+scipy==1.11.1
+
+# Visualization
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Computer Vision (for Grad-CAM)
+opencv-python==4.8.0.76
+
+# Jupyter Environment
+jupyter==1.0.0
+notebook==7.0.2
+ipykernel==6.25.0
+ipywidgets==8.1.0
+
+# Model Interpretability
+# tf-keras-vis==0.8.5  # Alternative Grad-CAM library (optional)
+
+# CLI & Progress Bars
+tqdm==4.66.1
+click==8.1.7
+
+# Testing (optional for development)
+pytest==7.4.0
+pytest-cov==4.1.0
+
+# Code Quality (optional for development)
+# black==23.7.0
+# flake8==6.1.0
+# mypy==1.5.0
+
+# ====================================================================
+# Installation Instructions:
+# ====================================================================
+# 1. Create virtual environment:
+#    python -m venv venv
+#    source venv/bin/activate  # Linux/Mac
+#    venv\Scripts\activate     # Windows
+#
+# 2. Install dependencies:
+#    pip install -r requirements.txt
+#
+# 3. Verify TensorFlow GPU (optional):
+#    python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+#
+# ====================================================================
+# Reproducibility:
+# ====================================================================
+# Set these in your code:
+#   import random, numpy as np, tensorflow as tf
+#   random.seed(42)
+#   np.random.seed(42)
+#   tf.random.set_seed(42)
+#   os.environ['PYTHONHASHSEED'] = '42'
+#   os.environ['TF_DETERMINISTIC_OPS'] = '1'
+# ====================================================================
