@@ -11,7 +11,7 @@
 
 ## 🚀 Try It Yourself!
 
-**[🌐 Live Demo on HuggingFace Spaces](https://huggingface.co/spaces/YOUR_USERNAME/medical-cancer-detection)**
+**[🌐 Live Demo on HuggingFace Spaces](https://huggingface.co/spaces/emiraran/histopathology-cancer-detection)**
 
 Upload histopathology images and see real-time AI predictions with Grad-CAM explainability!
 
@@ -201,20 +201,26 @@ Trainable Parameters: ~164,000
 
 ## 📊 Performance Metrics
 
-### ✅ Independent Test Set Results (15% Held-Out)
+### ✅ Independent Test Set Results (20% Held-Out)
 
-**⚠️ NEW: Proper 70/15/15 Split with Independent Test Set**
+**Final Validation on Unseen Test Data (55,505 images)**
 
 | Metric | Value | 95% CI | Clinical Benchmark |
 |--------|-------|--------|--------------------|
-| **AUC-ROC** | 0.94 | [0.93, 0.95] | ≥0.85 (FDA) ✅ |
-| **Sensitivity** | 92-95% | [91%, 96%] | ≥90% ✅ |
-| **Specificity** | 87-90% | [86%, 91%] | - |
-| **Precision (PPV)** | 66% | [64%, 68%] | ≥50% ✅ |
-| **F1-Score** | 0.77 | [0.75, 0.79] | - |
-| **Accuracy** | 88-89% | - | - |
+| **AUC-ROC** | 0.9411 | [0.9390, 0.9433] | ≥0.85 (FDA) ✅ |
+| **Sensitivity** | 91.5% | [91.1%, 92.0%] | ≥90% ✅ |
+| **Specificity** | 81.1% | - | - |
+| **Precision (PPV)** | 65.7% | [65.1%, 66.3%] | ≥50% ✅ |
+| **NPV** | 96.0% | - | - |
+| **F1-Score** | 0.765 | - | - |
+| **Accuracy** | 84.0% | - | - |
 
 **Decision Threshold:** 0.40 (optimized for high sensitivity in cancer screening)
+
+**Clinical Impact:**
+- **Cancer Detection Rate:** 91.5% (14,425 / 15,757 cancers detected)
+- **Missed Cancers:** 8.5% (1,332 false negatives)
+- **False Alarm Rate:** 18.9% (7,530 false positives)
 
 **Test Set:** 15% held-out, NEVER used during:
 - Model training

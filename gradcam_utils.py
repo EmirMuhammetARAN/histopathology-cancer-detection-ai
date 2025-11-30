@@ -85,10 +85,18 @@ class GradCAM:
         heatmap = conv_outputs @ pooled_grads[..., tf.newaxis]
         heatmap = tf.squeeze(heatmap)
         
-        # ReLU and normalize
-        heatmap = tf.maximum(heatmap, 0) / (tf.math.reduce_max(heatmap) + eps)
+        # ReLU
+        heatmap = tf.maximum(heatmap, 0)
         
-        return heatmap.numpy()
+        # Normalize using percentile for better contrast
+        heatmap_np = heatmap.numpy()
+        vmax = np.percentile(heatmap_np, 99)  # 99th percentile instead of max
+        if vmax > eps:
+            heatmap_np = np.clip(heatmap_np / vmax, 0, 1)
+        else:
+            heatmap_np = heatmap_np / (heatmap_np.max() + eps)
+        
+        return heatmap_np
     
     def overlay_heatmap(
         self, 
